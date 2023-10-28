@@ -28,5 +28,11 @@
             android:layout_height="wrap_content"
             android:text="코틀린 변수 체험"/>
 
+        <Button
+            android:id="@+id/btnCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="코틀린 조건문 체험"/>
+
     </LinearLayout>
 </layout>
