@@ -81,6 +81,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:enabled="false"
             android:text="공개안함"/>
 
     </RadioGroup>
@@ -93,6 +94,7 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:text="개인정보 이용 방안에 동의합니다."/>
 
     <Button
