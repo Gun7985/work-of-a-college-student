@@ -40,5 +40,18 @@
             android:layout_height="wrap_content"
             android:text="코틀린 조건문 체험"/>
 
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="사람 이름을 넣어주세요"
+            android:singleLine="true"/>
+
+        <Button
+            android:id="@+id/btnNameToast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이름 토스트로 띄우기"/>
+
     </LinearLayout>
 </layout>
