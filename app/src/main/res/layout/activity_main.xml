@@ -28,6 +28,12 @@
             android:layout_height="wrap_content"
             android:text="코틀린 변수 체험"/>
 
+        <EditText
+            android:id="@+id/edtUserAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="사용자의 나이를 입력하세요"/>
+
         <Button
             android:id="@+id/btnCondition"
             android:layout_width="match_parent"
