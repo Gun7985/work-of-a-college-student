@@ -29,5 +29,16 @@
         android:hint="8자 이상으로 입력해주세요."
         android:inputType="textPassword"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="추천인 이름"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="사람 이름 입력"
+        android:singleLine="true"
+        android:imeOptions="actionSearch"/>
 
 </LinearLayout>
