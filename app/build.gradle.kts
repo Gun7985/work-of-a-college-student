@@ -7,6 +7,7 @@ android {
     namespace = "kr.ac.wku.dailytest_20231028"
     compileSdk = 33
 
+//    데이터바인딩 준비
     dataBinding {
         enable = true
     }
