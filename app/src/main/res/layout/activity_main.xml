@@ -9,6 +9,10 @@
         android:padding="20dp"
         tools:context=".MainActivity">
 
+        <ListView
+            android:id="@+id/pizzastoreListview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
     </LinearLayout>
 </layout>
