@@ -1,11 +1,25 @@
 package kr.ac.wku.librarypractice_20231029
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.databinding.DataBindingUtil
+import kr.ac.wku.librarypractice_20231029.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+        binding.imgProfile.setOnClickListener {
+
+            // 이미지 뷰도 클릭 이벤트 지원
+
+            // ViewPhotoActivity 사용
+            val myIntent = Intent(this, ViewPhotoActivity::class.java)
+            startActivity(myIntent)
+        }
     }
 }
