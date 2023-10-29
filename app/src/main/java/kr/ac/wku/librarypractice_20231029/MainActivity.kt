@@ -2,9 +2,11 @@ package kr.ac.wku.librarypractice_20231029
 
 import android.Manifest
 import android.content.Intent
+import android.media.Image
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import com.bumptech.glide.Glide
@@ -63,6 +65,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // 화면이 켜지면 바로 이미지 불러내기 (웹상 이미지)
-        Glide.with(this).load(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCnnRTKexFN2zd8LYDAD53ANOFZQn6Q1lBvg&usqp=CAU)
+        val imgageView =findViewById<ImageView>(R.id.imgView)
+        Glide.with(this).load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCnnRTKexFN2zd8LYDAD53ANOFZQn6Q1lBvg&usqp=CAU").into(imgageView)
     }
 }
