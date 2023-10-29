@@ -12,6 +12,13 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_second)
 
+        binding.btnReturn.setOnClickListener {
+
+//            현재 화면 종료 : 밑에 깔린 이전 화면이 드러남
+            finish()
+
+
+        }
 
     }
 }
