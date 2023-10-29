@@ -16,7 +16,7 @@
             android:text="2번 화면으로 이동하기"/>
 
         <EditText
-            android:id="@+id/edt"
+            android:id="@+id/edtMessage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="3번 화면으로 전달할 내용"/>
