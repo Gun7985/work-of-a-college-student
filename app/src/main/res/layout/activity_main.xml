@@ -28,7 +28,7 @@
             android:hint="3번 화면으로 전달할 숫자"/>
 
         <Button
-            android:id="@+id/btnMessage"
+            android:id="@+id/btnMoveToThird"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="3번 화면으로 전달합니다."/>
