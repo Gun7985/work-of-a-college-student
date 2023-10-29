@@ -33,6 +33,13 @@ class MainActivity : AppCompatActivity() {
             val clickedStore = mPizzaStoreList[position]
 
             val myIntent = Intent( this, ViewStoreDetailActivity::class.java)
+
+            // clickedStore는 우리가 임의로 만든 클래스. 첨부 불가
+            // 준비 된 클래스에 포장해서(Serializable로 포장) -> 첨부
+            // 받은 입장에서는 포장을 풀어서 사용.
+            myIntent.putExtra("store", clickedStore)
+
+
             startActivity(myIntent)
 
         }
