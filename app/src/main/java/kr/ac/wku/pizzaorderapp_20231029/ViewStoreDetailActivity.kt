@@ -3,6 +3,7 @@ package kr.ac.wku.pizzaorderapp_20231029
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
+import com.bumptech.glide.Glide
 import kr.ac.wku.pizzaorderapp_20231029.databinding.ActivityViewStoreDetailBinding
 import kr.ac.wku.pizzaorderapp_20231029.datas.StoreData
 
@@ -17,6 +18,9 @@ class ViewStoreDetailActivity : AppCompatActivity() {
         // as : 우리가 임의로 만든 클래스로 캐스팅
         val storeData = intent.getSerializableExtra("store") as StoreData
 
+        Glide.with(this).load(storeData.logoURL).into(binding.imgLogo)
+        binding.txtStorename.text = storeData.name
+        binding.txtPhoneNum.text =- storeData.phoneNum
 
     }
 }
