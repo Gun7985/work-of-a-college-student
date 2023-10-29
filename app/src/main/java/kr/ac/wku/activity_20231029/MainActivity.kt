@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 //            화면 이동하기 전에, 데이터를 myIntent에 첨부
 //            ebtMessage에 적힌 값을 변수에 저장 -> 이 변수를 첨부
             val inputMessage = binding.edtMessage.text.toString()
-            myIntent.putExtra("message", )
+            myIntent.putExtra("message", inputMessage)
 
 
             startActivity(myIntent)
