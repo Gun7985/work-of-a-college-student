@@ -2,6 +2,7 @@ package kr.ac.wku.listview_20231029
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import kr.ac.wku.listview_20231029.adapters.StudentAdapter
 import kr.ac.wku.listview_20231029.databinding.ActivityMainBinding
@@ -31,5 +32,19 @@ class MainActivity : AppCompatActivity() {
 
 //        만들어진 어댑터를 리스트뷰의 어댑터로 연결
         binding.studentListView.adapter = mStdAdapter
+        
+        
+//        한명의 학생을 클릭하면 -> 토스트로 "이름: 연락처" 토스트로 출력
+        binding.studentListView.setOnItemClickListener { adapterView, view, position, l -> 
+            
+//            이 함수의 세번째(i, position) q변수 -> 클릭된 위치를 알려주는 역할
+//            mStudentList 중, 클릭된 위치에 맞는 학생 추출 -> 활용
+            
+            val clickedStd = mStudentList[position]
+
+            Toast.makeText(this, "${clickedStd.name} : ${clickedStd.phoneNum}", Toast.LENGTH_SHORT).show()
+            
+        }
+        
     }
 }
