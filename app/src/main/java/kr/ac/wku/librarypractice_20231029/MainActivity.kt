@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
+import com.bumptech.glide.Glide
 import com.gun0912.tedpermission.PermissionListener
 import com.gun0912.tedpermission.normal.TedPermission
 import kr.ac.wku.librarypractice_20231029.databinding.ActivityMainBinding
@@ -60,5 +61,8 @@ class MainActivity : AppCompatActivity() {
                 .check()
 
         }
+
+        // 화면이 켜지면 바로 이미지 불러내기 (웹상 이미지)
+        Glide.with(this).load(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCnnRTKexFN2zd8LYDAD53ANOFZQn6Q1lBvg&usqp=CAU)
     }
 }
