@@ -25,5 +25,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(myIntent)
 
         }
+
+        binding.btnMoveToSecond.setOnClickListener {
+
+            val myIntent = Intent( this, ThirdActivity::class.java)
+            startActivity(myIntent)
+
+        }
     }
 }
