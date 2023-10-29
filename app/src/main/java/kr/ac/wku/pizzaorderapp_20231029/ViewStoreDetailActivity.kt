@@ -20,7 +20,7 @@ class ViewStoreDetailActivity : AppCompatActivity() {
 
         Glide.with(this).load(storeData.logoURL).into(binding.imgLogo)
         binding.txtStorename.text = storeData.name
-        binding.txtPhoneNum.text =- storeData.phoneNum
+        binding.txtPhoneNum.text = storeData.phoneNum
 
     }
 }
