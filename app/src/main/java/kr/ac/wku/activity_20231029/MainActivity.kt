@@ -35,6 +35,11 @@ class MainActivity : AppCompatActivity() {
             val inputMessage = binding.edtMessage.text.toString()
             myIntent.putExtra("message", inputMessage)
 
+//            edtNumber에 적힌 값도 Int로 변환해서 첨부
+            val inputNumber = binding.edtNumber.text.toString().toInt()
+
+//            하나의 Intent에 여러개의 변수를 첨부 가능(이름표만 잘 구별하자)
+            myIntent.putExtra("number", inputNumber)
 
             startActivity(myIntent)
 
