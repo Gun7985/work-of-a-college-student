@@ -41,7 +41,7 @@ class StudentAdapter(
         val txtPhoneNum = row.findViewById<TextView>(R.id.txtPhoneNum)
 
         txtName.text = stdData.name
-        txtAge.text ="(${ 2023 - stdData.birthYear + 1}세)"
+        txtAge.text ="(${ stdData.getKoreanAge(2023)}세)"
         txtPhoneNum.text = stdData.phoneNum
 
         return row
