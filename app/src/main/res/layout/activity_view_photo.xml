@@ -8,9 +8,9 @@
     android:background="#000000"
     tools:context=".ViewPhotoActivity">
 
-    <ImageView
+    <com.github.chrisbanes.photoview.PhotoView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/IU"/>
+        android:src="@drawable/iu_pic"/>
 
 </LinearLayout>
