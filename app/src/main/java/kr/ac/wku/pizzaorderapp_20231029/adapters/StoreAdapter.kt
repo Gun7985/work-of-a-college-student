@@ -11,7 +11,7 @@ import kr.ac.wku.pizzaorderapp_20231029.datas.StoreData
 class StoreAdapter(
     val mContext: Context,
     val resId: Int,
-    val mList: ArrayList<StoreData>) :ArrayAdapter<StoreAdapter>(mContext, resId, mList) {
+    val mList: ArrayList<StoreData>) :ArrayAdapter<StoreData>(mContext, resId, mList) {
 
         val inf = LayoutInflater.from(mContext)
 
