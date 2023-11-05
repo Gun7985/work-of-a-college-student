@@ -6,7 +6,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
 @EnableJpaAuditing // @CreatedDate, @LastModifiedDate를 사용하기 위해 필요
-// @CreatedDate, @LastModifiedDate를 사용하기 위해 필요
 public class Chat20231104Application {
 
 	public static void main(String[] args) {
