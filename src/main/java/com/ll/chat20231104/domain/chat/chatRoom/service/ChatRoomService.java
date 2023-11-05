@@ -4,23 +4,38 @@ import com.ll.chat20231104.domain.chat.chatRoom.entity.ChatRoom;
 import com.ll.chat20231104.domain.chat.chatRoom.repository.ChatRoomRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
 public class ChatRoomService {
     private final ChatRoomRepository chatRoomRepository;
 
-    public void make(String name) {
+    @Transactional
+    public ChatRoom make(String name) {
         ChatRoom chatRoom = ChatRoom.builder()
                 .name(name)
                 .build();
 
         chatRoomRepository.save(chatRoom);
+        return chatRoom;
     }
 
     public List<ChatRoom> findAll() {
         return chatRoomRepository.findAll();
+    }
+
+    @Transactional
+    public void write(long roomId, String writerName, String content) {
+        ChatRoom chatRoom = chatRoomRepository.findById(roomId).get();
+
+        chatRoom.writeMessage(writerName, content);
+    }
+
+    public Optional<ChatRoom> findById(long roomId) {
+        return chatRoomRepository.findById(roomId);
     }
 }
