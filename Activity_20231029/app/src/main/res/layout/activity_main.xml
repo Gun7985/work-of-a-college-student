@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/btnMoveToSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2번 화면으로 이동하기"/>
+
+        <EditText
+            android:id="@+id/edtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="3번 화면으로 전달할 내용"/>
+        <EditText
+            android:id="@+id/edtNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="3번 화면으로 전달할 숫자"/>
+        <Button
+            android:id="@+id/btnMoveToThird"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3번 화면으로 전달합니다."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전화번호 입력"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/edtPhoneNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="전화번호"
+            android:inputType="phone"/>
+        <Button
+            android:id="@+id/btnPhoneCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="전화걸기"/>
+    </LinearLayout>
+</layout>
