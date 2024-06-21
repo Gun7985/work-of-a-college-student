@@ -1,1 +1,1 @@
-# work-of-a-college-student
+대학생 때 작업했던 레포지토리 입니다. 
