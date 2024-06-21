@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/btnLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그 찍어보기"/>
+
+        <Button
+            android:id="@+id/btnToast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="토스트 띄우기"/>
+
+
+        <Button
+            android:id="@+id/btnVariable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="코틀린 변수 체험"/>
+
+        <EditText
+            android:id="@+id/edtUserAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="사용자의 나이를 입력하세요"/>
+
+        <Button
+            android:id="@+id/btnCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="코틀린 조건문 체험"/>
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="사람 이름을 넣어주세요"
+            android:singleLine="true"/>
+
+        <Button
+            android:id="@+id/btnNameToast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이름 토스트로 띄우기"/>
+
+    </LinearLayout>
+</layout>
